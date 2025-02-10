@@ -1,0 +1,413 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --white: #ffffff;
+  --warm-white-50: #fffaf5;
+  --blue-purple-600: #5e6085;
+  --deep-blue-900: #000958;
+  --orange-red-500: #ff5b2e;
+  --indigo-900: #181e52;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #656689;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-family: "Sora";
+  color: #000958;
+  font-size: 6.6rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+h2 {
+  font-family: "Sora";
+  color: #000958;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.875;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary {
+  display: inline-block;
+  border-radius: 31px;
+  border: 1px solid rgba(255, 91, 46, 0.6);
+  box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+  color: var(--orange-red-500);
+  font-weight: 500;
+  line-height: 1;
+  transition: all 400ms;
+}
+.btn-primary:hover {
+  background-color: var(--orange-red-500);
+  border-color: var(--orange-red-500);
+  color: var(--white);
+}
+
+.header {
+  padding-top: 26px;
+  padding-bottom: 13px;
+  background-color: var(--warm-white-50);
+  position: sticky;
+  top: -13px;
+  z-index: 3;
+}
+.header .navbar {
+  display: flex;
+  align-items: center;
+}
+.header .menu {
+  display: flex;
+  gap: 36px;
+  margin-left: 229px;
+}
+.header .link {
+  color: var(--blue-purple-600);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: color 400ms;
+}
+.header .link:hover {
+  color: var(--deep-blue-900);
+}
+.header .signup-btn {
+  margin-left: auto;
+  padding: 17px 31px;
+  border-radius: 25px;
+  border-color: rgba(0, 9, 88, 0.7);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--deep-blue-900);
+  box-shadow: none;
+}
+.header .signup-btn:hover {
+  border-color: var(--deep-blue-900);
+  background-color: var(--deep-blue-900);
+  color: var(--white);
+}
+
+.hero {
+  padding-top: 163px;
+  padding-bottom: 77px;
+  background-color: var(--warm-white-50);
+}
+.hero .container {
+  display: flex;
+  gap: 120px;
+}
+.hero .media {
+  display: flex;
+  position: relative;
+}
+.hero .thumb {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 388px;
+  height: 488px;
+  border-radius: 16px;
+  border: 3px solid #fff;
+  background: linear-gradient(180deg, #ffa78d 0%, #ff8c60 100%);
+  box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.hero .thumb-small {
+  margin-top: 302px;
+  margin-left: -23px;
+  width: 186px;
+  height: 244px;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  background: linear-gradient(206deg, #faa7ad 4.68%, #e87f8a 98.09%);
+  box-shadow: 8px 18px 36px -6px rgba(234, 148, 157, 0.17);
+}
+.hero .decor {
+  position: absolute;
+}
+.hero .decor-left {
+  bottom: 67px;
+  left: -58px;
+  z-index: 0;
+}
+.hero .decor-right {
+  top: 16px;
+  left: 377px;
+}
+.hero .title {
+  margin-top: 71px;
+  margin-bottom: 24px;
+}
+.hero .act {
+  margin-top: 38px;
+}
+.hero .hero-btn {
+  color: var(--white);
+  font-weight: 600;
+  padding: 21px 44px;
+  background-color: var(--orange-red-500);
+  position: relative;
+}
+.hero .hero-btn span {
+  display: inline-block;
+  transition: all 400ms;
+}
+.hero .hero-btn .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--white);
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  transition: all 400ms;
+}
+.hero .hero-btn:hover span {
+  transform: translateX(-15px);
+}
+.hero .hero-btn:hover .icon {
+  opacity: 1;
+  visibility: visible;
+  right: 25px;
+}
+.hero .call-btn {
+  margin-left: 24px;
+  color: var(--deep-blue-900);
+  font-weight: 500;
+  line-height: 1;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+.hero .card {
+  position: absolute;
+  bottom: -36px;
+  left: 129px;
+  z-index: 1;
+}
+.hero .card .card-inner {
+  padding: 18px 14px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+.hero .card .thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--bg-color);
+  border: none;
+}
+.hero .card .row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero .card .card-title {
+  color: var(--indigo-900);
+  font-family: "Sora";
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.hero .card .line {
+  margin: 4px 0;
+  width: 118px;
+  height: 4px;
+  border-radius: 10px;
+  opacity: 0.08;
+  background: var(--deep-blue-900);
+}
+.hero .card .line-short {
+  margin: 0;
+  width: 39px;
+}
+.hero .card .separate {
+  width: 222px;
+  height: 2px;
+  background: #f2f2f2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

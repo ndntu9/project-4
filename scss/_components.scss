@@ -1,0 +1,16 @@
+.btn-primary {
+    display: inline-block;
+    border-radius: 31px;
+    border: 1px solid rgba($color: #ff5b2e, $alpha: 0.6);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    color: var(--orange-red-500);
+    font-weight: 500;
+    line-height: 1;
+    transition: all 400ms;
+
+    &:hover {
+        background-color: var(--orange-red-500);
+        border-color: var(--orange-red-500);
+        color: var(--white);
+    }
+}

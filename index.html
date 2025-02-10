@@ -4,9 +4,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lucy-Pet Care Landing Page</title>
-        <!-- bootstrap + custom bootstrap -->
-        <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css" />
-        <link rel="stylesheet" href="assets/css/custom.css" />
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- css -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
         <!-- favicon -->
         <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
@@ -14,5 +20,87 @@
         <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
         <link rel="manifest" href="assets/favicon/site.webmanifest" />
     </head>
-    <body></body>
+    <body>
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <a href="#hero" class="logo">
+                        <img src="assets/icons/logo.svg" alt="" />
+                    </a>
+                    <ul class="menu">
+                        <li>
+                            <a href="#hero" class="link">Home</a>
+                        </li>
+                        <li>
+                            <a href="" class="link">About</a>
+                        </li>
+                        <li>
+                            <a href="" class="link">Services & Rates</a>
+                        </li>
+                        <li>
+                            <a href="" class="link">Review</a>
+                        </li>
+                        <li>
+                            <a href="" class="link">Contacts us</a>
+                        </li>
+                    </ul>
+                    <a href="#!" class="signup-btn btn-primary">Sign up</a>
+                </nav>
+            </div>
+        </header>
+        <!-- hero -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="media">
+                    <div class="thumb">
+                        <img src="assets/img/hero-thumb-1.png" alt="" />
+                    </div>
+                    <div class="thumb thumb-small">
+                        <img src="assets/img/hero-thumb-2.png" alt="" />
+                    </div>
+                    <img src="assets/icons/hero-union-1.svg" alt="" class="decor decor-left" />
+                    <img src="assets/icons/hero-union-2.svg" alt="" class="decor decor-right" />
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="row">
+                                <div class="thumb" style="--bg-color: #fec23f">
+                                    <img src="assets/img/hero-card-1.png" alt="" />
+                                </div>
+                                <div class="col">
+                                    <p class="card-title">Pet Health</p>
+                                    <div class="line"></div>
+                                    <div class="line line-short"></div>
+                                </div>
+                            </div>
+                            <div class="separate"></div>
+                            <div class="row">
+                                <div class="thumb" style="--bg-color: #c6e2fa">
+                                    <img src="assets/img/hero-card-2.png" alt="" />
+                                </div>
+                                <div class="col">
+                                    <p class="card-title">Pet Care</p>
+                                    <div class="line"></div>
+                                    <div class="line line-short"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h1 class="title">Established & Trusted Pet Care Service</h1>
+                    <p class="desc">Discover a wide variety of Pawsitive services to choose from, including daycare, private walks, office duty and spa.</p>
+                    <div class="act">
+                        <a href="#!" class="hero-btn btn-primary">
+                            <span>Book a Meet</span>
+                            <i class="icon">
+                                <img src="assets/icons/left.svg" alt="" />
+                            </i>
+                        </a>
+                        <a href="tel:0123456789" class="call-btn">Schedule a Call</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
