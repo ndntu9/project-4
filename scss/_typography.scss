@@ -10,6 +10,7 @@ $heading-color: #000958 !default;
     --blue-purple-600: #5e6085;
     --deep-blue-900: #000958;
     --orange-red-500: #ff5b2e;
+    --indigo-600: #48496a;
     --indigo-900: #181e52;
 }
 
@@ -21,6 +22,7 @@ $heading-color: #000958 !default;
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -56,9 +58,16 @@ a {
 
 button,
 input {
+    padding: 0;
+    margin: 0;
     border: none;
     outline: none;
     background-color: transparent;
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
 }
 
 .container {
