@@ -25,3 +25,20 @@ for (let i = 0; i < tabs.length; i++) {
         tabContent.classList.add('active');
     };
 }
+
+const switchs = $$('.switch-btn');
+const slider = $('.slider');
+
+for (let i = 0; i < switchs.length; i++) {
+    switchs[i].onclick = function (e) {
+        const switchActive = $('.switch-btn.active');
+        switchActive.classList.remove('active');
+        switchs[i].classList.add('active');
+
+        if (switchs[i].classList.contains('monthly')) {
+            slider.style.left = '-1px';
+        } else {
+            slider.style.left = '145px';
+        }
+    };
+}

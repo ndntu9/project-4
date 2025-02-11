@@ -687,6 +687,13 @@ button {
   top: 50%;
   transform: translateY(-50%);
 }
+.service .sub-title {
+  margin-bottom: 15px;
+  color: #5e6085;
+  font-family: "Sora";
+  font-weight: 600;
+  line-height: 1;
+}
 .service .card-desc {
   margin-top: 18px;
   margin-bottom: 24px;
@@ -723,6 +730,177 @@ button {
 .service .service-btn {
   margin-top: 45px;
   padding: 20px 40px;
+}
+
+.team {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #fffaf5;
+  text-align: center;
+}
+.team .heading {
+  text-align: center;
+}
+.team .sub-title {
+  margin-bottom: 15px;
+  color: #5e6085;
+  font-family: "Sora";
+  font-weight: 600;
+  line-height: 1;
+}
+.team .list-teams {
+  display: flex;
+  gap: 68px;
+  margin-top: 59px;
+}
+.team .team-member {
+  text-align: center;
+}
+.team .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 234px;
+  height: 266px;
+  border-radius: 129.5px;
+  position: relative;
+}
+.team .avatar img {
+  border-radius: inherit;
+}
+.team .avatar svg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.team .job {
+  margin-top: 29px;
+  margin-bottom: 14px;
+  color: #656689;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.team .name {
+  color: #000958;
+  font-family: "Sora";
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.team .team-btn {
+  margin-top: 48px;
+  padding: 20px 40px;
+}
+
+.pricing {
+  padding-top: 86px;
+  padding-bottom: 86px;
+  background-color: #fff6ed;
+}
+.pricing .heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.pricing .desc {
+  text-align: center;
+  width: 709px;
+}
+.pricing .switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 38px;
+  width: 276px;
+  height: 56px;
+  border-radius: 31px;
+  border: 1px solid rgba(255, 91, 46, 0.6);
+  position: relative;
+}
+.pricing .switch-btn {
+  color: #ff5b2e;
+  font-weight: 500;
+  line-height: 1;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 2;
+  transition: all 400ms;
+}
+.pricing .switch-btn.active {
+  color: #fff;
+}
+.pricing .slider {
+  width: 131px;
+  height: 56px;
+  border-radius: 31px;
+  background: #ff5b2e;
+  position: absolute;
+  top: 0;
+  left: 145px;
+  z-index: 1;
+  transition: all 400ms;
+}
+.pricing .icon {
+  position: absolute;
+  bottom: 29px;
+  right: -112px;
+}
+.pricing .list-packages {
+  display: flex;
+  gap: 44px;
+  margin-top: 56px;
+}
+.pricing .package {
+  border-radius: 20px;
+  background-color: #fff;
+  transition: all 400ms;
+}
+.pricing .package:hover {
+  box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);
+}
+.pricing .package-inner {
+  padding: 30px 28px 28px 43px;
+}
+.pricing .package .list > li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.pricing .package .list p {
+  color: #656689;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.pricing .package .package-btn {
+  margin: 22px 0 24px;
+  padding: 14px 65px;
+  box-shadow: none;
+}
+.pricing .package .package-type {
+  color: #ff5b2e;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.pricing .package .package-name {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  color: #3f4065;
+  font-family: "Sora";
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.pricing .package .package-price {
+  color: #000958;
+  font-family: "Sora";
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
