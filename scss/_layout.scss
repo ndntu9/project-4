@@ -481,3 +481,95 @@
         }
     }
 }
+
+.service {
+    padding-top: 68px;
+    padding-bottom: 100px;
+    background-color: #fff6ed;
+
+    .heading {
+        text-align: center;
+    }
+
+    .row {
+        display: flex;
+        gap: 86px;
+        margin-top: 71px;
+    }
+
+    .card {
+        width: 294px;
+        border-radius: 10px;
+        border: 2px solid rgba(255, 188, 122, 0.26);
+        background-color: #fff;
+        margin-bottom: 24px;
+    }
+
+    .card-inner {
+        padding: 30px 22px 28px;
+    }
+
+    .card-title {
+        margin-left: 14px;
+        color: #000958;
+        font-family: 'Sora';
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 1;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 2px;
+            height: 22px;
+            background: linear-gradient(90deg, #ff5b2e 0.39%, #ffa187 100.29%);
+            position: absolute;
+            left: -14px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .card-desc {
+        margin-top: 18px;
+        margin-bottom: 24px;
+        color: #656689;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .card-link {
+        color: #34396a;
+        font-family: 'Sora';
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1;
+        position: relative;
+
+        &::after {
+            content: url(../icons/arrow-up-right.svg);
+            position: absolute;
+            top: 50%;
+            right: -18px;
+            transform: translateY(-50%);
+        }
+    }
+
+    .thumb {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 260px;
+        width: 410px;
+        height: 350px;
+        border-radius: 10px;
+        background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+    }
+
+    .service-btn {
+        margin-top: 45px;
+        padding: 20px 40px;
+    }
+}
