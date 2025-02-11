@@ -42,3 +42,44 @@ for (let i = 0; i < switchs.length; i++) {
         }
     };
 }
+
+const listPage = $$('.page');
+const prevBtn = $('.prev.review-btn');
+const nextBtn = $('.next.review-btn');
+
+let currentIndex = 0;
+
+function getCurrentIndex(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].classList.contains('active')) {
+            currentIndex = i;
+            return currentIndex;
+        }
+    }
+}
+
+for (let i = 0; i < listPage.length; i++) {
+    prevBtn.onclick = function (e) {
+        prevIndex = 0;
+        getCurrentIndex(listPage);
+        if (currentIndex === 0) {
+            prevIndex = listPage.length - 1;
+        } else {
+            prevIndex = currentIndex - 1;
+        }
+        listPage[currentIndex].classList.remove('active');
+        listPage[prevIndex].classList.add('active');
+    };
+
+    nextBtn.onclick = function (e) {
+        nextIndex = 0;
+        getCurrentIndex(listPage);
+        if (currentIndex === listPage.length - 1) {
+            nextIndex = 0;
+        } else {
+            nextIndex = currentIndex + 1;
+        }
+        listPage[currentIndex].classList.remove('active');
+        listPage[nextIndex].classList.add('active');
+    };
+}
