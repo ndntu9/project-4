@@ -894,3 +894,209 @@
         }
     }
 }
+
+.blog {
+    padding-bottom: 131px;
+    background-color: #fffaf5;
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 512px;
+    }
+
+    .desc {
+        width: 350px;
+        margin-bottom: 24px;
+    }
+
+    .blog-btn {
+        padding: 20px 40px;
+    }
+
+    .list-blog {
+        display: flex;
+        gap: 48px;
+        margin-top: 54px;
+    }
+
+    .blog-item {
+        .thumb {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 358px;
+            height: 362px;
+            border-radius: 24px 24px 0 24px;
+            position: relative;
+
+            img {
+                width: 322px;
+                height: 296px;
+                object-fit: cover;
+            }
+
+            .blog-date {
+                color: #fff;
+                font-family: 'Sora';
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 17px;
+                position: absolute;
+                top: 24px;
+                left: 36px;
+            }
+        }
+
+        .blog-title {
+            margin-top: 28px;
+            margin-bottom: 16px;
+            color: #000958;
+            font-family: 'Sora';
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 34px;
+        }
+
+        .blog-desc {
+            color: #656689;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+}
+
+.footer {
+    padding-bottom: 48px;
+    background: rgb(255, 246, 237);
+    background: linear-gradient(90deg, rgba(255, 246, 237, 1) 0%, rgba(255, 246, 237, 1) 38%, rgba(255, 250, 245, 1) 38%);
+
+    .footer-inner {
+        display: flex;
+        gap: 341px;
+    }
+
+    .left-side {
+        margin-top: 114px;
+    }
+
+    form {
+        margin-top: 40px;
+        position: relative;
+    }
+
+    input {
+        width: 268px;
+        height: 46px;
+        border-radius: 23px;
+        border: 1px solid rgba(255, 91, 46, 0.25);
+        opacity: 0.6;
+        background: #fff;
+        padding: 16px 22px;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background-color: #ff5b2e;
+        box-shadow: 0px 15px 28px -7px #ff5b2e4d;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 800ms;
+
+        img {
+            filter: brightness(0) saturate(100%) invert(97%) sepia(13%) saturate(330%) hue-rotate(289deg) brightness(119%) contrast(100%);
+        }
+    }
+
+    input:focus + button {
+        opacity: 1;
+        visibility: visible;
+        left: 222px;
+    }
+
+    .follow {
+        margin-top: 68px;
+        color: #000958;
+        font-family: 'Sora';
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .social {
+        display: flex;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    .social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 32px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        box-shadow: 0px 16px 28px -10px rgba(211, 132, 53, 0.33);
+        transition: all 400ms;
+
+        &:hover {
+            background-color: #e3d4d4;
+        }
+    }
+
+    .right-side {
+        margin-top: 52px;
+    }
+
+    .row {
+        display: flex;
+        margin-bottom: 58px;
+    }
+
+    .row:first-child {
+        gap: 225px;
+    }
+
+    .row:last-child {
+        gap: 137px;
+    }
+
+    .col-title {
+        margin-bottom: 14px;
+        color: #000958;
+        font-family: 'Sora';
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .link,
+    .contact,
+    .time {
+        color: #656689;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .copyright {
+        text-align: center;
+        color: #656689;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 14px;
+        opacity: 0.6;
+    }
+}
